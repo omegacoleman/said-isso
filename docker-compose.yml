@@ -1,0 +1,10 @@
+isso:
+  image: wonderfall/isso
+  environment:
+    - GID=1000
+    - UID=1000
+  volumes:
+    - $PWD/config:/config:z
+    - $PWD/db:/db:z
+  ports:
+    - 8624:8624
